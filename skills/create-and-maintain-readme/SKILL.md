@@ -18,6 +18,13 @@ it serves when known, and why its organization is useful. Write for a reader
 who has not seen the repository before. Do not claim a purpose, audience, or
 coverage that is not supported by the stored knowledge.
 
+Include a compact `Solution architecture` view before the topic table. Name the
+repository elements that participate in the knowledge flow and show how sources
+or references become a topic information record, which then becomes discoverable
+through the README master index. Use a small text diagram when it makes the
+interactions clearer. Explain the responsibility and reason for each top-level
+folder; do not list folders that do not exist.
+
 Follow the description with one `Knowledge topics` table. Use these columns:
 
 | Topic | Description | Information record |
