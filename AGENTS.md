@@ -55,6 +55,7 @@ ideas record.
 
 - `GitHub {action}` invokes
   [github-maintain](skills/github-maintain/SKILL.md).
+- Apply the shared [GitHub version-control standard](skills/github-maintain/docs/version_control.md).
 
 Supported actions are `status`, `connect {owner/repository}`, `commit`,
 `commit version`, `commit minor version`, `commit major version`, and `pull`.

@@ -2,7 +2,7 @@
 
 ## Description
 
-Knowledge-worker is the shared knowledge-base maintainer for agent-worker projects: it preserves reusable skills and durable topic-based knowledge, with each topic stored in `knowledge/{topic-slug}/` as separate information, ideas, references, and preserved source material so verified learning, exploration, and provenance remain distinct and navigable. Its GitHub repository is [kochf1/knowledge-worker](https://github.com/kochf1/knowledge-worker); the latest remote update is [`11da7a1` — “Remove legacy quickstarter configuration” (2026-09-27)](https://github.com/kochf1/knowledge-worker/commit/11da7a12dd81b7516a0fdb8d2da563ee517b6f2a), while the current local migration is prepared but has not been committed or pushed.
+Knowledge-worker is the shared knowledge-base maintainer for agent-worker projects: it preserves reusable skills and durable topic-based knowledge, with each topic stored in `knowledge/{topic-slug}/` as separate information, ideas, references, and preserved source material so verified learning, exploration, and provenance remain distinct and navigable. Its GitHub repository is [kochf1/knowledge-worker](https://github.com/kochf1/knowledge-worker); use `GitHub status` for the current branch, release, and remote-update state.
 
 ## Entry Points
 

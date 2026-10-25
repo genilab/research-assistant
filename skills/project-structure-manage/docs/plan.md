@@ -24,6 +24,10 @@ navigation without overwriting material.
   than deleting or overwriting it.
 - It must distinguish permanent project structure from temporary migration
   material.
+- It must ask whether the project adopts the shared GitHub/version-control
+  package and, when selected, transfer its skill package, catalog row, and
+  AGENTS and INFO action declarations without transferring another project's
+  remote, history, tags, releases, or project-specific rules.
 
 ## Delegation to Code
 

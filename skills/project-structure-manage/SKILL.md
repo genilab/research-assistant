@@ -19,7 +19,8 @@ folders and control documents, or an evidence-based report of conflicts.
 
 1. Read `docs/plan.md`, the target `AGENTS.md` if it exists, and relevant
    INFO documents. Confirm project identity, role, expected permanent
-   structure, and whether external GitHub documentation is required.
+   structure, whether external GitHub documentation is required, and whether
+   the project owner selects the shared GitHub/version-control package.
 2. Inspect the target filesystem. If the expected structure is absent, create
    the required folders, `AGENTS.md`, and main and local `INFO.md` documents.
    Create `README.md` only when external documentation is explicitly required.
@@ -27,8 +28,10 @@ folders and control documents, or an evidence-based report of conflicts.
    reconcile stale navigation. Preserve extra or conflicting material and
    report it for a user decision.
 4. Do not create topic content, product code, or local skills outside the
-   confirmed scope. Report the resulting structure, changes made, and open
-   decisions.
+   confirmed scope. When GitHub versioning is selected, transfer the complete
+   `github-maintain` package and its version-control reference, add its Skills
+   Info entry, and add the portable GitHub action block to `AGENTS.md` and root
+   `INFO.md`. Report the resulting structure, changes made, and open decisions.
 
 ## Constraints
 

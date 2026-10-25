@@ -15,7 +15,8 @@ Supported actions are `status`, `connect {owner/repository}`, `commit`,
 `commit version`, `commit minor version`, `commit major version`, and `pull`.
 Every commit action generates a concise message from the changed files and
 creates a GitHub-controlled semantic version release. It never synchronizes
-automatically.
+automatically. Apply the portable
+[version-control standard](docs/version_control.md).
 
 ## Workflow
 
@@ -37,10 +38,9 @@ automatically.
    before mutation. Commit and push the confirmed project changes, create and
    push an annotated semantic tag, then create a GitHub Release with generated
    notes.
-5. Determine the requested version bump from the GitHub action: `commit`
-   defaults to `patch`; `commit version` and `commit minor version` use
-   `minor`; `commit major version` uses `major`. Use the latest GitHub semantic
-   release/tag as the version authority. If none exists, begin at `v0.0.1`.
+5. Determine the requested version bump under the version-control standard.
+   Use the latest GitHub semantic release/tag as the version authority; an
+   explicitly requested initial version may override the default `v0.0.1`.
    Do not create a local VERSION file or changelog.
 6. For `pull`, fetch remote information and report divergence. On the explicit
    request, fast-forward only when the working tree is clean and no merge or
