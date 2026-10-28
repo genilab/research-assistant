@@ -11,6 +11,7 @@ import yaml
 
 
 ALLOWED = {"name", "description", "license", "allowed-tools", "metadata"}
+ROLE = re.compile(r"^Primary agent role: ([a-z][a-z0-9-]*)\.$", re.M)
 
 
 def check(project: Path) -> list[str]:
@@ -23,7 +24,8 @@ def check(project: Path) -> list[str]:
         if not all(path.is_file() for path in (skill, plan, qa)):
             errors.append(f"{package.name}: missing SKILL.md, plan, or QA")
             continue
-        front = re.match(r"^---\n(.*?)\n---", skill.read_text(), re.S)
+        source = skill.read_text()
+        front = re.match(r"^---\n(.*?)\n---", source, re.S)
         data = yaml.safe_load(front.group(1)) if front else {}
         if not isinstance(data, dict) or set(data) - ALLOWED:
             errors.append(f"{package.name}: unsupported front matter")
@@ -31,6 +33,9 @@ def check(project: Path) -> list[str]:
         meta = data.get("metadata")
         if data.get("name") != package.name or not isinstance(meta, dict) or not meta.get("action"):
             errors.append(f"{package.name}: invalid name or metadata.action")
+            continue
+        if len(ROLE.findall(source)) != 1:
+            errors.append(f"{package.name}: requires exactly one primary agent role")
             continue
         actions[package.name] = meta["action"]
     catalog = (skills_root / "INFO.md").read_text() if (skills_root / "INFO.md").is_file() else ""

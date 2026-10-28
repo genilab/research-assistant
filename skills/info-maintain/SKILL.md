@@ -17,6 +17,7 @@ are current `AGENTS.md`, maintained skill definitions, topic folders, and QA
 records; it produces refreshed root, skills, knowledge, or topic-local
 `INFO.md` files. It has no user activation command; a calling workflow invokes
 it.
+Primary agent role: information-agent.
 
 ## Workflow
 

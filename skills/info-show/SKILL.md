@@ -13,6 +13,7 @@ metadata:
 Use this skill when the user says `Show info` or `Show info {area}`.
 It opens the requested existing `INFO.md` in the workspace editor without
 changing the workspace.
+Primary agent role: information-agent.
 
 ## Workflow
 

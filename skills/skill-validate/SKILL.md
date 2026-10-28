@@ -16,6 +16,7 @@ the selected named skill or full catalog against its local records. Its
 inputs are a selector (`{skill}` or `all`) and current
 skill packages, and it produces refreshed `docs/qa.md` records and a skills info.
 It has no user activation command; a calling workflow invokes it.
+Primary agent role: skill-agent.
 
 ## Workflow
 
@@ -24,9 +25,10 @@ It has no user activation command; a calling workflow invokes it.
    then perform the documented Knowledge-worker structural checks. Do not run
    deprecated validation code retained in migration storage.
 3. Check the authoritative [minimal skill format](../skill-create/docs/skill_format.md),
-   plan requirements, source documentation, and executable test units where
-   code is delegated. Reconcile any legacy layout assumptions before relying
-   on copied validation code.
+   including exactly one primary agent-role declaration in each Scope, plan
+   requirements, source documentation, and executable test units where code is
+   delegated. Reconcile any legacy layout assumptions before relying on copied
+   validation code.
 4. Confirm that the root INFO document contains only Description, Entry Points,
    and Public Interfaces, and that `skills/INFO.md` contains only `# SKILLS
    Info` plus its `Skill`, `Action`, `Status`, `Plan`, and `QA` table.

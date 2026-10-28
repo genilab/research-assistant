@@ -2,7 +2,7 @@
 
 ## Description
 
-Knowledge-worker is the shared knowledge-base maintainer for agent-worker projects: it preserves reusable skills and durable topic-based knowledge, with each topic stored in `knowledge/{topic-slug}/` as separate information, ideas, references, and preserved source material so verified learning, exploration, and provenance remain distinct and navigable. Its GitHub repository is [kochf1/knowledge-worker](https://github.com/kochf1/knowledge-worker); use `GitHub status` for the current branch, release, and remote-update state.
+Knowledge-worker is the shared knowledge-base maintainer for graph-based multi-agent projects: its `AGENTS.md` orchestrates agent roles and their reusable skills while its durable topic-based knowledge is stored in `knowledge/{topic-slug}/` as separate information, ideas, references, and preserved source material so verified learning, exploration, and provenance remain distinct and navigable. Its GitHub repository is [kochf1/knowledge-worker](https://github.com/kochf1/knowledge-worker); use `GitHub status` for the current branch, release, and remote-update state.
 
 ## Entry Points
 

@@ -16,6 +16,7 @@ applying the code-worker documentation standard without changing behavior. Its
 inputs are the source file and its owning project, module, or skill record, and
 it produces documented source plus validation findings. It has no user activation
 command; a calling workflow invokes it.
+Primary agent role: skill-agent.
 
 ## Workflow
 

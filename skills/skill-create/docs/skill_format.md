@@ -28,6 +28,7 @@ metadata:
 This is an internal or external skill. Use it when {trigger}. It is responsible
 only for {bounded responsibility}. It receives {inputs} and produces {outcome}.
 State its activation condition here.
+Primary agent role: {lowercase-hyphenated-role}.
 
 ## Workflow
 
@@ -70,3 +71,9 @@ The allowed sections must collectively state:
 The plan and QA evidence remain in `docs/`; deterministic implementation remains
 in `code/`; executable test units remain in `tests/`. They are not copied into
 `SKILL.md`.
+
+`Primary agent role: {role}.` is required once in `## Scope`, as a complete
+sentence on its own line. The role must be a capability node declared in the
+owning `AGENTS.md` Agent graph. It identifies skill ownership and routing; it
+does not represent an unsupported top-level front-matter field or prove that a
+persistent external agent is deployed.

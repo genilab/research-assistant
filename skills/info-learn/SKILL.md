@@ -16,6 +16,7 @@ only for adding supplied material to one existing topic. Its inputs are the
 topic, supplied information and/or idea and/or source file or citation; it
 produces appended, appropriately attributed topic records. User activation command:
 `Learn info about {topic}`.
+Primary agent role: knowledge-agent.
 
 ## Workflow
 

@@ -16,7 +16,11 @@ navigation without overwriting material.
 
 - It must confirm project identity, role, required structure, and external
   README need before changing a target.
-- It must create required folders, `AGENTS.md`, and main and local `INFO.md`
+- It must establish the target's graph-based multi-agent orchestration
+  contract: an orchestrator, necessary agent roles, skill ownership and
+  handoffs, and escalation boundaries, using `multiagent_project_model.md`.
+- It must create required folders, `AGENTS.md` with the multi-agent
+  orchestration contract, and main and local `INFO.md`
   documents when the target structure is absent.
 - It must reconcile missing required elements and stale navigation when the
   target structure exists.
@@ -28,6 +32,8 @@ navigation without overwriting material.
   package and, when selected, transfer its skill package, catalog row, and
   AGENTS and INFO action declarations without transferring another project's
   remote, history, tags, releases, or project-specific rules.
+- It must record the owner-selected repository visibility and README profile
+  in the target AGENTS file before README maintenance can occur.
 
 ## Delegation to Code
 

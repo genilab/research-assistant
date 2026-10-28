@@ -10,28 +10,35 @@ metadata:
 
 ## Scope
 
-This is an internal skill. Use it only when an external GitHub repository
-requires a README or a user directly requests one. For Knowledge-worker, use
-the defined minimal README format: one purpose paragraph and a Topics table
-maintained by `knowledge-base-maintain`. It is responsible only for that
-external-facing root document. Its inputs are the approved public project
+This is an internal skill. Use it when the project's `AGENTS.md` declares a
+README profile or the user directly requests a README. It selects either the
+public-release or private-repository template and maintains only the root
+document. Its inputs are the declared visibility/profile, approved project
 identity, verified implementation evidence, existing README, and available
 assets. It produces an accurate README or a clear gap report. It has no user
 activation command; a calling workflow invokes it.
+Primary agent role: publication-agent.
 
 ## Workflow
 
-1. Confirm that external documentation is required and identify the public
-   audience and publication boundary. Otherwise, use `INFO.md` for internal
-   navigation and do not create a README.
-2. Use approved public identity, verified capabilities, validation evidence,
-   real assets, and accurate existing README material. Do not expose private
+1. Read the Repository publication declaration in `AGENTS.md`. Escalate a
+   missing visibility or README profile rather than inferring one.
+2. For `public-release`, use the
+   [public-release template](docs/public_release_template.md) and
+   [public README process](docs/public_readme_process.md); for `private`,
+   use the [private-repository template](docs/private_repo_template.md).
+3. Use approved identity, verified capabilities, validation evidence, real
+   assets, and accurate existing README material. Do not expose private
    operating details or planned capabilities as present facts.
-3. For Knowledge-worker, retain only the project title, one verified purpose
-   paragraph, and the Topics table. For another project, compose only the
-   externally useful layout supported by verified evidence.
-4. Ask for clarification with these questions for any material gap before creating the affected section: “Who is the intended reader and what outcome do they need?”; “What is the shortest verified setup path, including prerequisites, command, and expected result?”; “Which real example best demonstrates the result, including input and output?”; “Which capabilities, limitations, or integrations are safe to state publicly?”; “Is there an approved infographic or banner asset, and what does it depict?”; “Which support, contribution, license, or release information should be linked?” Do not infer an answer from a planned or unverified capability.
-5. Produce the updated README and a concise gap report for any unanswered question or unavailable required asset.
+4. For a public release, retain the template's ordered title, one-line
+   description, Infographics, Badges, What does, Getting started, and What
+   can you do next sections. For Knowledge-worker, use the verified knowledge
+   base purpose and public actions; do not add an infographic until its process
+   is defined.
+5. Ask for clarification about any material gap before creating the affected
+   section. Do not infer public claims, access rules, or release details.
+6. Produce the updated README and a concise gap report for any unanswered
+   question or unavailable required asset.
 
 ## Constraints
 

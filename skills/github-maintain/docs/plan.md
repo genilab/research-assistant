@@ -13,7 +13,8 @@ state-changing step while providing one simple GitHub action. Every commit
 generates a factual message and creates a semantic GitHub release.
 
 For Knowledge-worker commits, it first reconciles the knowledge catalog and
-minimal README Topics table before generating the commit preview.
+README Topics table, then applies the declared README profile before generating
+the commit preview.
 
 ## Script Requirements
 

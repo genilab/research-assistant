@@ -15,6 +15,7 @@ uses `$topic-create`. It is responsible only for creating one complete empty
 topic and its main-info entry. Its input is a human-readable topic name and
 an optional short description; it produces a slugged topic folder containing
 the required records. User activation command: `Create topic {topic}`.
+Primary agent role: knowledge-agent.
 
 ## Workflow
 

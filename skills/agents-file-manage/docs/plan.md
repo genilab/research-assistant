@@ -16,6 +16,9 @@ decisions.
 
 - It must confirm project identity, role, resource locations, and boundaries
   before creating or revising `AGENTS.md`.
+- It must establish or preserve the graph-based multi-agent contract: a
+  bounded orchestrator, agent-role graph, skill ownership and handoffs, and
+  escalation rules, following `multiagent_project_model.md`.
 - It must create a complete operating contract when the file is absent.
 - It must preserve existing guidance and make only confirmed changes when the
   file is present.
@@ -23,6 +26,8 @@ decisions.
   escalation.
 - It must distinguish operating guidance from durable knowledge and INFO
   navigation.
+- It must not represent a capability role as a persistent external agent
+  without an explicit deployment decision.
 
 ## Delegation to Code
 

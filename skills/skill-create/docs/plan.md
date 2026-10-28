@@ -23,6 +23,9 @@ then validates the result and refreshes the skills info. It may invoke
 - It must create the target `SKILL.md` to cover every target Script Requirement.
 - It must create every target `SKILL.md` in the authoritative ideal minimal Codex skill format: valid name and description metadata, one title, focused Scope, Workflow, Constraints, and Dependencies only when another managed skill is invoked.
 - It must make each target `SKILL.md` minimally well-described by stating its trigger, bounded responsibility, inputs, expected outcome, clarification conditions, and non-goals within the allowed sections.
+- It must assign exactly one primary agent role declared by the owning
+  `AGENTS.md` graph, state it in the target Scope, and record any required
+  graph handoff without claiming an undeployed external agent.
 - It must reject invalid names, groups, existing destinations, unsupported resources, and catchall or incomplete requests.
 - It must apply the source-code standard whenever the target skill has code or test units, including the factual `AI instruction:` context block and readable code structure.
 - It must preserve the role, activation, and associated workflow skills declared for the target skill.

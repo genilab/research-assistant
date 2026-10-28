@@ -17,6 +17,7 @@ Every commit action generates a concise message from the changed files and
 creates a GitHub-controlled semantic version release. It never synchronizes
 automatically. Apply the portable
 [version-control standard](docs/version_control.md).
+Primary agent role: publication-agent.
 
 ## Workflow
 
@@ -32,12 +33,12 @@ automatically. Apply the portable
    non-conflicting `origin`. Do not commit, push, or pull.
 4. For a Knowledge-worker commit action, first invoke
    `knowledge-base-maintain` to reconcile `knowledge/INFO.md` and the minimal
-   README Topics table from verified topics. Then confirm the branch and
-   upstream, inspect the changed files, and generate a concise factual commit
-   message. Preview the proposed changed files, message, and next version
-   before mutation. Commit and push the confirmed project changes, create and
-   push an annotated semantic tag, then create a GitHub Release with generated
-   notes.
+   README Topics table from verified topics, then invoke `readme-maintain`
+   using the declared README profile. Then confirm the branch and upstream,
+   inspect the changed files, and generate a concise factual commit message.
+   Preview the proposed changed files, message, and next version before
+   mutation. Commit and push the confirmed project changes, create and push an
+   annotated semantic tag, then create a GitHub Release with generated notes.
 5. Determine the requested version bump under the version-control standard.
    Use the latest GitHub semantic release/tag as the version authority; an
    explicitly requested initial version may override the default `v0.0.1`.
