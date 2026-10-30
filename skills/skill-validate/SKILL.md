@@ -22,7 +22,7 @@ Primary agent role: skill-agent.
 
 1. Read the selected plan and confirm the selector names a managed flat skill and the required local records exist; ask for clarification when the intended target or missing evidence is ambiguous.
 2. Run Codex's bundled `quick_validate.py` for the selected skill or catalog,
-   then perform the documented Knowledge-worker structural checks. Do not run
+   then perform the documented local structural checks. Do not run
    deprecated validation code retained in migration storage.
 3. Check the authoritative [minimal skill format](../skill-create/docs/skill_format.md),
    including exactly one primary agent-role declaration in each Scope, plan

@@ -1,15 +1,19 @@
 # QA — skill-validate
 
-Status: VERIFIED
+## Summary
 
-- `tests/test_validate_catalog.py` passed against an isolated invalid fixture.
-- `code/validate_catalog.py --project .` passed for the current catalog.
-- Codex's bundled `quick_validate.py` passed for all managed skill packages.
-- The validator rejects unsupported front matter and detects catalog-action
-  mismatches.
-- The validator rejects a missing or duplicate `Primary agent role` declaration
-  and the current catalog routes every skill to one declared AGENTS graph role.
+- Overall status: VERIFIED
+- Validation date: 2026-10-29
+- Scope: active skill package, extended requirements, plan, catalog action, dependency, and role binding.
 
-## Executed Test Units
+## Evidence
 
-- `tests/test_validate_skills.py`: PASSED — Actual checks passed.
+- Package structure: matching package name, supported front matter, non-empty description, and required instruction sections passed.
+- Plan: Summary, Description, Script Requirements, Delegation to Code, and Code Requirements sections passed.
+- Extended requirements: current plan requirements are represented in `docs/requirements.md`.
+- Integration: declared primary role, managed dependencies, and alphabetical Skills INFO action entry passed.
+- Executable checks: Included executable checks passed.
+
+## Boundary
+
+This status verifies the implemented instruction package and its deterministic checks. A future use against a live topic, paper, or experiment remains operational evidence rather than an implied historical run.

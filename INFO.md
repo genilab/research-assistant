@@ -1,28 +1,35 @@
-# Knowledge-worker Info
+# Research-assistant Info
 
 ## Description
 
-Knowledge-worker is the shared knowledge-base maintainer for graph-based multi-agent projects: its `AGENTS.md` orchestrates agent roles and their reusable skills while its durable topic-based knowledge is stored in `knowledge/{topic-slug}/` as separate information, ideas, references, and preserved source material so verified learning, exploration, and provenance remain distinct and navigable. Its GitHub repository is [kochf1/knowledge-worker](https://github.com/kochf1/knowledge-worker); use `GitHub status` for the current branch, release, and remote-update state.
+Research-assistant extends Knowledge-worker's topic-based knowledge model for academic research. It preserves attributed information, ideas, references, and source material in the shared topic schema; topic INFO and the paper, experiment, and publication indexes provide the only research-specific navigation extensions.
 
 ## Entry Points
 
-| Entry point | Location |
+| Entry Point | Location |
 | --- | --- |
 | Skills | [skills/INFO.md](skills/INFO.md) |
 | Knowledge | [knowledge/INFO.md](knowledge/INFO.md) |
 
 ## Public Interfaces
 
-- `Show info` or `Show info {area}` opens the main or requested local INFO
-  document in the workspace editor, reporting an unknown or ambiguous area
-  without changing anything. ([info-show](skills/info-show/SKILL.md))
-- `Create topic {topic}` creates the complete topic folder, its information,
-  ideas, references, and source-material records, then lists the topic in the
-  main knowledge INFO document. ([topic-create](skills/topic-create/SKILL.md))
-- `Learn info about {topic}` or `Absorb info about {topic}` adds supplied
-  knowledge to an existing topic with attribution, keeping verified
-  information, ideas, and source references separate. ([info-learn](skills/info-learn/SKILL.md))
-- `GitHub {action}` performs only the requested status, connection, versioned
-  commit/release, or pull action; commits generate a message and semantic
-  GitHub release, while synchronization never occurs automatically.
-  ([github-maintain](skills/github-maintain/SKILL.md))
+- `Create topic {topic}` creates a complete research topic, its topic INFO, and
+  its research indexes. ([topic-create](skills/topic-create/SKILL.md))
+- `Explain topic {topic}` explains the maintained state of one topic.
+  ([topic-explain](skills/topic-explain/SKILL.md))
+- `Show info {topic}` presents a topic's maintained INFO document unchanged.
+  ([topic-show](skills/topic-show/SKILL.md))
+- `Learn info about {topic}` adds supplied, attributed information, ideas, or
+  references. ([info-learn](skills/info-learn/SKILL.md))
+- `Learn this paper for {topic}` records one supplied paper and its provenance.
+  ([paper-learn](skills/paper-learn/SKILL.md))
+- `Search literature for {topic}` produces a bounded, traceable candidate set.
+  ([literature-search](skills/literature-search/SKILL.md))
+- `Analyze paper {paper} for {topic}` creates a structured analysis and
+  reference record. ([paper-analyze](skills/paper-analyze/SKILL.md))
+- `Create synthesis for {topic}` compares a defined topic corpus.
+  ([synthesis-create](skills/synthesis-create/SKILL.md))
+- `Brainstorm about {topic}` develops ideas, questions, hypotheses, arguments,
+  and directions. ([topic-brainstorm](skills/topic-brainstorm/SKILL.md))
+- `Propose {Type_Paper} Paper for {topic}` returns a type-specific paper
+  blueprint. ([paper-propose](skills/paper-propose/SKILL.md))

@@ -35,7 +35,9 @@ Primary agent role: knowledge-agent.
    material and label uncertainty or interpretation.
 5. Append proposals, hypotheses, questions, and brainstormed possibilities to
    `{topic-slug}_ideas.md`, never presenting them as confirmed information.
-6. Produce the update outcome, naming affected records and any unresolved
+6. Refresh the topic `INFO.md` with a concise accumulated-knowledge summary and
+   links to newly affected records; do not duplicate their full contents.
+7. Produce the update outcome, naming affected records and any unresolved
    source or classification question.
 
 ## Constraints

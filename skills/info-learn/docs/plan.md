@@ -23,6 +23,7 @@ separate durable records rather than flattening them into one note.
   record.
 - It must retain uncertainty, attribution, and conflicting claims rather than
   silently resolving them.
+- It must refresh the topic-level INFO summary and links after durable learning.
 - It must ask for clarification when the topic, source identity, or content
   classification is ambiguous.
 

@@ -10,7 +10,7 @@ metadata:
 
 ## Scope
 
-This is an internal skill. Use it after Knowledge-worker project records,
+This is an internal skill. Use it after Research-assistant project records,
 managed skills, or QA evidence change. It is responsible only for maintaining
 the approved root and local INFO formats from authoritative records. Its inputs
 are current `AGENTS.md`, maintained skill definitions, topic folders, and QA

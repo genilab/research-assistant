@@ -21,8 +21,10 @@ Primary agent role: knowledge-agent.
 
 1. Read `docs/plan.md`, `knowledge/INFO.md`, the target `AGENTS.md`, and the
    candidate topic folders.
-2. Verify every topic follows the prescribed schema and identify missing or
-   conflicting records.
+2. Verify every topic retains `references/` plus its information, ideas, and
+   refs records. Verify the research extension's topic INFO and paper,
+   experiment, and publication indexes. Identify missing or conflicting records
+   without inventing research content.
 3. Update the main knowledge INFO only from verified topic folders.
 4. Provide verified topic names and concise descriptions to `readme-maintain`
    only when the declared README profile explicitly requires topic content.

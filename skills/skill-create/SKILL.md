@@ -10,7 +10,7 @@ metadata:
 
 ## Scope
 
-Use this internal skill when Knowledge-worker needs a new or revised reusable,
+Use this internal skill when Research-assistant needs a new or revised reusable,
 bounded workflow. It accepts a defined skill intent and completed target plan,
 then is responsible for producing a managed skill package with only the
 artifacts that operation needs. It has no user activation command; a calling
@@ -26,8 +26,8 @@ Primary agent role: skill-agent.
    action in supported front-matter metadata and its primary agent role in its
    Scope. Ask for clarification when any of these is missing.
 3. Read the owning `AGENTS.md` and relevant `INFO.md` files before authoring.
-   Confirm that the action belongs in the shared base rather than in a
-   project-specific workspace.
+   Confirm that the action belongs in this research framework rather than an
+   unrelated project workspace.
 4. Create only the target package folders required by the plan, its pending QA
    record, and one `skills/INFO.md` entry that follows the five-column format
    in [the info-format standard](../info-maintain/docs/info_format.md). The

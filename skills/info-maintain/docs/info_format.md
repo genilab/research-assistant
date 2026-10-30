@@ -1,6 +1,6 @@
-# Knowledge-worker INFO Format
+# Research-assistant INFO Format
 
-This is the authoritative format for the Knowledge-worker root and skills
+This is the authoritative format for the Research-assistant root and skills
 INFO documents. `info-maintain`, `skill-create`, and `skill-validate` must
 apply it whenever they create, revise, or check either document.
 
@@ -10,12 +10,12 @@ The root file is named `INFO.md` and contains exactly these sections, in this
 order:
 
 ```md
-# Knowledge-worker Info
+# Research-assistant Info
 
 ## Description
 
-{One paragraph describing Knowledge-worker as a knowledge-base maintainer and
-how its topic-based knowledge base works.}
+{One paragraph describing Research-assistant as a topic-based academic research
+framework and how its durable records remain linked.}
 
 ## Entry Points
 
